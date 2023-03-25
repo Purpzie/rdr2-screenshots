@@ -1,0 +1,15 @@
+[package]
+name = "rdr2-screenshots"
+version = "1.0.0"
+license = "Unlicense"
+authors = ["Purpzie"]
+include = ["src", "README.md"]
+edition = "2021"
+publish = false
+
+[profile.release]
+codegen-units = 1
+lto = true
+
+[dependencies]
+anyhow = "1.0.70"
